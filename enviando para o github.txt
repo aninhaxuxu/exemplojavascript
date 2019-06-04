@@ -1,0 +1,17 @@
+//dentro da pasta que contém os arquivos, por exemplo C:\Users\IFPB\Desktop\JavaScript
+//inicia o repositorio
+git init
+
+//adicionar os arquivos para o stage area
+git add .
+
+// 'salva' os arquivos. 'salvar' é comitar os arquivos
+git commit -m "sua mensagem, digite-a aqui, por favor"
+
+//indicar o repositorio remoto (no github)
+git remote add origin https://github.com/aninhaxuxu/ExemplosJava.git
+
+//enviar os arquivos ao github (ao repositorio que foi criado)
+git push origin master
+
+
