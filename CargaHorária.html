@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <title>Título</title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+     
+      <script type="text/javascript">
+        //<![CDATA[
+            /* Script de Quantidade de Horas trabalhadas na semana */
+
+            var PrimeiroDia;
+            var SegundoDia;
+            var TerceiroDia;
+            var QuartoDia;
+            var QuintoDia;
+            var SomaDasHoras;
+            
+            PrimeiroDia = prompt('Digite a quantidade de horas trabalhadas no primeiro dia:', 'Digite aqui');
+            SegundoDia = prompt('Digite a quantidade de horas trabalhadas no segundo dia:', 'Digite aqui');
+            TerceiroDia = prompt('Digite a quantidade de horas trabalhadas no terceiro dia:', 'Digite aqui');
+            QuartoDia = prompt('Digite a quantidade de horas trabalhadas no quarto dia:', 'Digite aqui');
+            QuintoDia = prompt('Digite a quantidade de horas trabalhadas no quinto dia:', 'Digite aqui');
+
+            SomaDasHoras = parseInt(PrimeiroDia) + parseInt(SegundoDia) + parseInt(TerceiroDia) + parseInt(QuartoDia) + parseInt(QuintoDia);
+
+            document.writeln('Sua carga Horária da semana é: ', SomaDasHoras,"<br>");
+
+            if (SomaDasHoras < 70) {
+              document.writeln('Você trabalhou pouquíssimo tempo, precisa repor!<br><br>');
+            }
+             if (SomaDasHoras > 70 && SomaDasHoras< 150) {
+               document.writeln('Você está na média, não se preocupe!<br>');
+             }
+             else {
+               document.writeln('Cheque seu calendário, você tem direito à uns dias de folga!<br>')
+             }
+
+        // ]]>
+        </script>
+      </body>
+    </html>
