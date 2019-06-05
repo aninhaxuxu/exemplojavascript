@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <h2>Lista de alunos:</h2>
+ 
+  <script type="text/javascript">
+  // <![CDATA [
+      /* Alunos e suas matrículas */
+      var nome ;
+      var matricula ;
+      var Cadastro;
+      var alunos = {};
+      
+      Cadastro = prompt('Quantos alunos deseja cadastrar?');
+       
+      var contador = 0
+      while (contador<Cadastro){
+        nome = prompt('Digite o nome do aluno:'); 
+        matricula = prompt('Digite a matricula:'); 
+        contador+=1
+        alunos[matricula] = {};
+        alunos[matricula]['nome'] = nome;
+      }
+      document.write ('Lista de alunos e suas matriculas:', '<br />')
+      for(var key in alunos){
+        document.write ('Nome:', alunos[key]['nome'],' Matrícula:', key, '<br />')
+      } 
+      console.log(alunos)
+
+
+
+
+      
+    // ]]>
+    </script>
+  </body>
+</html>
